@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cotação Hapvida</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cotação Hapvida</h2>
+      <div class="response-container">
+        <p>O valor do plano escolhido é:</p>
+        <p class="valor">R$ {{ valor }}</p>
+
+        <form action="/" method="get">
+          <div class="form-group">
+            <button type="submit">Nova Cotação</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

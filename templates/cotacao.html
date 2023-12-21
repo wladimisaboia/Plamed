@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cotações Hapvida</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cotação Hapvida</h2>
+      <form action="/cotacao" method="post">
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input
+            type="text"
+            id="idade"
+            name="idade"
+            placeholder="Digite sua idade"
+          />
+        </div>
+        <div class="form-group">
+          <label for="plano">Plano:</label>
+          <select id="plano" name="plano">
+            <option value="enfermaria (pessoa física)">
+              Enfermaria (pessoa física)
+            </option>
+            <option value="ambulatorial (pessoa física)">
+              Ambulatorial (pessoa física)
+            </option>
+            <option value="enfermaria (pessoa jurídica)">
+              Enfermaria (pessoa jurídica)
+            </option>
+            <option value="ambulatorial (pessoa jurídica)">
+              Ambulatorial (pessoa jurídica)
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Cotar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
