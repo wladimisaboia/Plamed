@@ -11,8 +11,22 @@
     <div class="container">
       <h2>Cotação Hapvida</h2>
       <div class="response-container">
-        <p>O valor do plano escolhido é:</p>
-        <p class="valor">R$ {{ valor }}</p>
+        <p>Valores dos planos escolhidos para cada idade:</p>
+
+        {% if valores %} {% for idade, detalhes in valores.items() %} {% for
+        plano in detalhes['plano'] %}
+        <p>
+          Idade: {{ idade }}, Valor do plano: R$ {{ '{:.2f}'.format(plano) }}
+        </p>
+        {% endfor %} {% endfor %} {% if desconto_aplicado %}
+        <p class="valor-desconto">
+          Valor Total com Desconto: R$ {{ total_valor }}
+        </p>
+        {% else %}
+        <p class="valor">Valor Total: R$ {{ total_valor }}</p>
+        {% endif %} {% else %}
+        <p>Nenhum valor disponível.</p>
+        {% endif %}
 
         <form action="/" method="get">
           <div class="form-group">
