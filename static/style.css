@@ -15,7 +15,7 @@ body {
 .container {
   max-width: 500px;
   text-align: center;
-  padding: 60px;
+  padding: 30px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -23,8 +23,8 @@ body {
 }
 
 .container h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 20px;
   color: #333;
   font-size: 24px;
 }
@@ -42,14 +42,10 @@ body {
 .response-container button {
   width: 100%;
   padding: 12px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 10px;
-}
-
-.form-group select,
-.form-group input[type="text"] {
-  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .form-group input[type="submit"],
@@ -67,19 +63,27 @@ body {
 }
 
 .response-container {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .response-container p {
   margin: 0;
-  font-size: 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
   color: #333;
 }
 
 .response-container .valor {
   font-weight: bold;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 20px;
+  color: #0080ff;
+}
+
+.response-container .valor-desconto {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
   color: #0080ff;
 }
 
@@ -87,10 +91,9 @@ body {
   margin-top: 20px;
 }
 
-/* Adicionando regras de mídia para tornar o layout responsivo */
 @media (max-width: 600px) {
   .container {
-    padding: 30px;
+    padding: 20px;
   }
 
   .container h2 {
@@ -102,5 +105,13 @@ body {
   .form-group input[type="submit"],
   .response-container button {
     padding: 10px;
+  }
+
+  .response-container p {
+    font-size: 14px;
+  }
+
+  .response-container .valor {
+    font-size: 18px;
   }
 }
