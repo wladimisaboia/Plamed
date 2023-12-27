@@ -123,7 +123,7 @@ def cotar():
 
     total_valor = '{:.2f}'.format(total_valor)
 
-    return render_template('resposta.html', valores=valores, total_valor=total_valor, desconto_aplicado=desconto_aplicado)
+    return render_template('resposta.html', valores=valores, total_valor=total_valor, desconto_aplicado=desconto_aplicado, plano_selecionado=plano)
 
 if __name__ == '__main__':
     app.run(debug=True)
