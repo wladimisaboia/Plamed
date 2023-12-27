@@ -11,10 +11,58 @@
     <div class="container">
       <h2>Cotação Hapvida</h2>
       <div class="response-container">
-        <p>Valores dos planos escolhidos para cada idade:</p>
+        {% if valores %}
+        <!-- Seção de Benefícios -->
+        <div class="beneficios">
+          <h3>Benefícios do plano {{ plano_selecionado }}:</h3>
+          {% if plano_selecionado == 'enfermaria (pessoa física)' %}
+          <ul>
+            <li><span>Urgência e emergência</span></li>
+            <li><span>Consultas</span></li>
+            <li><span>Exames</span></li>
+            <li><span>Odontologia Premium</span></li>
+            <li><span>Internações</span></li>
+            <li><span>Cirurgias</span></li>
+          </ul>
+          {% elif plano_selecionado == 'ambulatorial (pessoa física)' %}
+          <ul>
+            <li><span>Urgência e emergência</span></li>
+            <li><span>Consultas</span></li>
+            <li><span>Exames</span></li>
+            <li><span>Odonto urgente</span></li>
+            <li class="no-mark"><span>Internações</span></li>
+            <li class="no-mark"><span>Cirurgias</span></li>
+          </ul>
 
-        {% if valores %} {% for idade, detalhes in valores.items() %} {% for
-        plano in detalhes['plano'] %}
+          {% elif plano_selecionado == 'enfermaria (pessoa jurídica)' %}
+          <ul>
+            <li><span>Urgência e emergência</span></li>
+            <li><span>Consultas</span></li>
+            <li><span>Exames</span></li>
+            <li><span>Internações</span></li>
+            <li><span>Cirurgias</span></li>
+          </ul>
+
+          {% elif plano_selecionado == 'ambulatorial (pessoa jurídica)' %}
+          <ul>
+            <li><span>Urgência e emergência</span></li>
+            <li><span>Consultas</span></li>
+            <li><span>Exames</span></li>
+            <li class="no-mark"><span>Internações</span></li>
+            <li class="no-mark"><span>Cirurgias</span></li>
+          </ul>
+          {% else %}
+          <p>Benefícios indisponíveis para o plano selecionado.</p>
+          {% endif %}
+        </div>
+
+        <!-- Seção de Valores -->
+        <p>
+          Valores do plano <strong>{{ plano_selecionado }}</strong> para cada
+          idade:
+        </p>
+        {% for idade, detalhes in valores.items() %} {% for plano in
+        detalhes['plano'] %}
         <p>
           Idade: {{ idade }}, Valor do plano: R$ {{ '{:.2f}'.format(plano) }}
         </p>
