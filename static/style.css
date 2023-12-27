@@ -115,3 +115,41 @@ body {
     font-size: 18px;
   }
 }
+
+.beneficios {
+  margin: 30px auto;
+  max-width: 500px;
+}
+
+.beneficios ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.beneficios ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.beneficios ul li::before {
+  content: "✅";
+  font-size: 14px;
+}
+
+.beneficios ul li.no-mark::before {
+  content: "❌";
+  font-size: 14px;
+}
+
+.beneficios ul li span {
+  margin-left: 2px;
+}
+
+.beneficios h3 {
+  margin-bottom: 20px;
+}
