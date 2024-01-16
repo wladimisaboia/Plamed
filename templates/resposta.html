@@ -51,6 +51,15 @@
             <li><span>Internações</span></li>
             <li><span>Cirurgias</span></li>
           </ul>
+          {% elif plano_selecionado == 'ambulatorial (pessoa jurídica) - Coparticipação parcial' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Coparticipação total'%}
+          <ul>
+            <li><span>Urgência e emergência</span></li>
+            <li><span>Consultas</span></li>
+            <li><span>Exames</span></li>
+            <li><span>Odonto urgente</span></li>
+            <li class="no-mark"><span>Internações</span></li>
+            <li class="no-mark"><span>Cirurgias</span></li>
+          </ul>
           {% elif plano_selecionado == 'allcare Ambulatorial - Sem Coparticipação' %}
           <ul>
             <li><span>Urgência e emergência</span></li>
