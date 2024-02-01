@@ -9,6 +9,11 @@
   </head>
   <body>
     <div class="container">
+    <div class="header">
+      <!-- Espaço para a imagem -->
+      <img src="{{ url_for('static', filename='hap.png') }}" alt="Logo" />
+    </div>
+    <div class="container">
       <h2>Cotação Hapvida</h2>
       <div class="response-container">
         {% if valores %}
