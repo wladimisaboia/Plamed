@@ -164,6 +164,6 @@ body {
     }
 .header img {
       max-width: 100%;
-      max-height: 60px; /* Defina a altura desejada para a imagem */
-      margin-top: 10px; /* Ajuste a margem conforme necessário */
+      max-height: 60px;
+      margin-top: 10px;
     }
