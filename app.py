@@ -16,10 +16,18 @@ def cotar():
     total_valor = 0
     desconto_aplicado = False
 
-    for idade in idades:
+    for i in range(len(idades)):
+        idade = idades[i]
         valor = 0
 
-        if plano == 'enfermaria (pessoa física) - Coparticipação parcial' or plano == 'enfermaria (pessoa física) - Coparticipação total' or plano == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano == 'ambulatorial (pessoa física) - Coparticipação total' or plano == 'apartamento (pessoa física) - Coparticipação parcial' or plano == 'apartamento (pessoa física) - Coparticipação total' or plano == 'Mix enfermaria (pessoa física) - Coparticipação parcial' or plano == 'Mix apartamento (pessoa física) - Coparticipação parcial':
+        if plano in ['enfermaria (pessoa física) - Coparticipação parcial',
+                     'enfermaria (pessoa física) - Coparticipação total',
+                     'ambulatorial (pessoa física) - Coparticipação parcial',
+                     'ambulatorial (pessoa física) - Coparticipação total',
+                     'apartamento (pessoa física) - Coparticipação parcial',
+                     'apartamento (pessoa física) - Coparticipação total',
+                     'Mix enfermaria (pessoa física) - Coparticipação parcial',
+                     'Mix apartamento (pessoa física) - Coparticipação parcial']:
             if len(idades) >= 2 and not desconto_aplicado:
                 valor = valor * 0.95
                 desconto_aplicado = True
