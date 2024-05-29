@@ -16,7 +16,9 @@
       <h2>Cotação Hapvida</h2>
       <div class="response-container">
         {% if valores %}
-        <!-- Benefícios -->
+
+        <!-- Benefícios do plano -->
+
         <div class="beneficios">
           <h3>Benefícios do plano {{ plano_selecionado }}:</h3>
           {% if plano_selecionado == 'enfermaria (pessoa física) - Coparticipação parcial' or plano_selecionado == 'enfermaria (pessoa física) - Coparticipação total' or plano_selecionado == 'apartamento (pessoa física) - Coparticipação parcial' or plano_selecionado == 'apartamento (pessoa física) - Coparticipação total'%}
@@ -88,6 +90,7 @@
         </div>
 
         <!-- Valores -->
+        
         <p>
           Valores do plano <strong>{{ plano_selecionado }}</strong> para cada
           idade:
@@ -114,5 +117,14 @@
         </form>
       </div>
     </div>
+        <script>
+        const interval = 120000;
+
+        function refreshPage() {
+            window.location.reload();
+        }
+
+        setInterval(refreshPage, interval);
+    </script>
   </body>
 </html>
