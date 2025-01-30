@@ -19,7 +19,7 @@ def cotar():
     for idade in idades:
         valor = 0
 
-        if plano == 'PLAMED EXCLUSIVE Enf CCO' or plano == 'MAIS VOCÊ' or plano == 'PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)' or plano == 'PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)':
+        if plano == 'PLAMED EXCLUSIVE Enf CCO' or plano == 'MAIS VOCÊ' or plano == 'PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)' or plano == 'PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)' :
             if len(idades) >= 2 and not desconto_aplicado:
                 valor = valor * 0.95
                 desconto_aplicado = True
@@ -192,7 +192,6 @@ def cotar():
                 valor = 1264.02
             else:
                 valor = 1731.86
-        
         else:
             return 'Plano inválido'
 
