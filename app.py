@@ -19,306 +19,180 @@ def cotar():
     for idade in idades:
         valor = 0
 
-        if plano == 'enfermaria (pessoa física) - Coparticipação parcial' or plano == 'enfermaria (pessoa física) - Coparticipação total' or plano == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano == 'ambulatorial (pessoa física) - Coparticipação total' or plano == 'apartamento (pessoa física) - Coparticipação parcial' or plano == 'apartamento (pessoa física) - Coparticipação total' or plano == 'Mix enfermaria (pessoa física) - Coparticipação parcial' or plano == 'Mix apartamento (pessoa física) - Coparticipação parcial':
+        if plano == 'PLAMED EXCLUSIVE Enf CCO' or plano == 'MAIS VOCÊ' or plano == 'PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)' or plano == 'PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)':
             if len(idades) >= 2 and not desconto_aplicado:
                 valor = valor * 0.95
                 desconto_aplicado = True
 
-        if plano == 'ambulatorial (pessoa física) - Coparticipação parcial':
+        if plano == 'PLAMED EXCLUSIVE Enf CCO':
             if idade <= 18:
-                valor = 182.56
+                valor = 177.86
             elif idade <= 23:
-                valor = 240.33
+                valor = 233.59
             elif idade <= 28:
-                valor = 273.93
+                valor = 268.08
             elif idade <= 33:
-                valor = 305.55
+                valor = 299.80
             elif idade <= 38:
-                valor = 321.55
+                valor = 314.60
             elif idade <= 43:
-                valor = 360.96
+                valor = 355.02
             elif idade <= 48:
-                valor = 441.34
+                valor = 432.31
             elif idade <= 53:
-                valor = 612.02
+                valor = 595.17
             elif idade <= 58:
-                valor = 824.93
+                valor = 802.19
             else:
-                valor = 1071.30
-        elif plano == 'ambulatorial (pessoa física) - Coparticipação total':
+                valor = 989.65
+        elif plano == 'MAIS VOCÊ':
             if idade <= 18:
-                valor = 117.31
+                valor = 233.54
             elif idade <= 23:
-                valor = 154.00
+                valor = 268.57
             elif idade <= 28:
-                valor = 175.34
+                valor = 319.60
             elif idade <= 33:
-                valor = 195.42
+                valor = 367.54
             elif idade <= 38:
-                valor = 205.58
+                valor = 393.27
             elif idade <= 43:
-                valor = 230.61
+                valor = 456.18
             elif idade <= 48:
-                valor = 281.66
+                valor = 574.80
             elif idade <= 53:
-                valor = 390.06
+                valor = 735.75
             elif idade <= 58:
-                valor = 525.28
+                valor = 985.89
             else:
-                valor = 681.75
-        elif plano == 'enfermaria (pessoa física) - Coparticipação parcial':
+                valor = 1350.71
+        elif plano == 'PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)':
             if idade <= 18:
-                valor = 218.82
+                valor = 331.78
             elif idade <= 23:
-                valor = 281.29
+                valor = 381.54
             elif idade <= 28:
-                valor = 319.95
+                valor = 454.02
             elif idade <= 33:
-                valor = 355.51
+                valor = 522.15
             elif idade <= 38:
-                valor = 372.11
+                valor = 558.72
             elif idade <= 43:
-                valor = 417.42
+                valor = 648.07
             elif idade <= 48:
-                valor = 504.06
+                valor = 816.58
             elif idade <= 53:
-                valor = 686.64
+                valor = 1045.21
             elif idade <= 58:
-                valor = 918.71
+                valor = 1400.57
             else:
-                valor = 1187.25
-        elif plano == 'enfermaria (pessoa física) - Coparticipação total':
+                valor = 1918.96
+        elif plano == 'PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)':
             if idade <= 18:
-                valor = 179.77
+                valor = 447.88
             elif idade <= 23:
-                valor = 229.75
+                valor = 515.05
             elif idade <= 28:
-                valor = 260.67
+                valor = 612.94
             elif idade <= 33:
-                valor = 289.12
+                valor = 704.87
             elif idade <= 38:
-                valor = 302.40
+                valor = 754.22
             elif idade <= 43:
-                valor = 338.65
+                valor = 874.86
             elif idade <= 48:
-                valor = 371.96
+                valor = 1102.38
             elif idade <= 53:
-                valor = 554.02
+                valor = 1411.00
             elif idade <= 58:
-                valor = 739.67
+                valor = 1890.73
             else:
-                valor = 954.49
-        elif plano == 'apartamento (pessoa física) - Coparticipação parcial':
+                valor = 2590.35
+        elif plano == 'EMPRESARIAL PREFERENCIAL I CECM CP':
             if idade <= 18:
-                valor = 316.44
+                valor = 160.56
             elif idade <= 23:
-                valor = 410.15
+                valor = 210.86
             elif idade <= 28:
-                valor = 468.13
+                valor = 241.99
             elif idade <= 33:
-                valor = 521.47
+                valor = 270.63
             elif idade <= 38:
-                valor = 546.36
+                valor = 283.99
             elif idade <= 43:
-                valor = 614.32
+                valor = 320.46
             elif idade <= 48:
-                valor = 744.28
+                valor = 390.24
             elif idade <= 53:
-                valor = 1018.14
+                valor = 537.25
             elif idade <= 58:
-                valor = 1366.23
+                valor = 724.13
             else:
-                valor = 1769.02
-        elif plano == 'apartamento (pessoa física) - Coparticipação total':
+                valor = 893.34
+        elif plano == 'EMPRESARIAL BASICO SERGIPE II CP (ENFERMARIA)':
             if idade <= 18:
-                valor = 257.86
+                valor = 200.10
             elif idade <= 23:
-                valor = 332.83
+                valor = 230.12
             elif idade <= 28:
-                valor = 379.22
+                valor = 273.83
             elif idade <= 33:
-                valor = 421.90
+                valor = 314.91
             elif idade <= 38:
-                valor = 441.82
+                valor = 336.96
             elif idade <= 43:
-                valor = 496.19
+                valor = 390.86
             elif idade <= 48:
-                valor = 600.16
+                valor = 492.49
             elif idade <= 53:
-                valor = 819.26
+                valor = 630.39
             elif idade <= 58:
-                valor = 1097.74
+                valor = 844.72
             else:
-                valor = 1419.99
-        elif plano == 'Mix enfermaria (pessoa física) - Coparticipação parcial':
+                valor = 1157.29
+        elif plano == 'EMPRESARIAL ESPECIAL SERGIPE II (APARTAMENTO)':
             if idade <= 18:
-                valor = 527.01
+                valor = 220.11
             elif idade <= 23:
-                valor = 688.10
+                valor = 253.13
             elif idade <= 28:
-                valor = 787.78
+                valor = 301.22
             elif idade <= 33:
-                valor = 879.48
+                valor = 346.40
             elif idade <= 38:
-                valor = 922.27
+                valor = 370.65
             elif idade <= 43:
-                valor = 1039.10
+                valor = 429.94
             elif idade <= 48:
-                valor = 1262.51
+                valor = 541.74
             elif idade <= 53:
-                valor = 1733.30
+                valor = 693.43
             elif idade <= 58:
-                valor = 2331.70
+                valor = 929.19
             else:
-                valor = 0
-        elif plano == 'Mix apartamento (pessoa física) - Coparticipação parcial':
+                valor = 1273.02
+        elif plano == 'EMPRESARIAL GOLD I (ENFERMARIA)':
             if idade <= 18:
-                valor = 778.74
+                valor = 299.43
             elif idade <= 23:
-                valor = 1020.39
+                valor = 344.34
             elif idade <= 28:
-                valor = 1169.91
+                valor = 409.75
             elif idade <= 33:
-                valor = 1307.47
+                valor = 471.24
             elif idade <= 38:
-                valor = 1371.66
+                valor = 504.24
             elif idade <= 43:
-                valor = 1546.91
+                valor = 584.88
             elif idade <= 48:
-                valor = 1882.04
+                valor = 736.96
             elif idade <= 53:
-                valor = 2588.25
+                valor = 943.30
             elif idade <= 58:
-                valor = 3485.88
+                valor = 1264.02
             else:
-                valor = 0
+                valor = 1731.86
         
-        elif plano == 'ambulatorial (pessoa jurídica) - Coparticipação parcial':
-            if idade <= 18:
-                valor = 130.03
-            elif idade <= 23:
-                valor = 145.63
-            elif idade <= 28:
-                valor = 163.11
-            elif idade <= 33:
-                valor = 187.58
-            elif idade <= 38:
-                valor = 215.72
-            elif idade <= 43:
-                valor = 256.71
-            elif idade <= 48:
-                valor = 320.89
-            elif idade <= 53:
-                valor = 401.11
-            elif idade <= 58:
-                valor = 681.89
-            else:
-                valor = 763.72
-        elif plano == 'ambulatorial (pessoa jurídica) - Coparticipação total':
-            if idade <= 18:
-                valor = 96.03
-            elif idade <= 23:
-                valor = 107.55
-            elif idade <= 28:
-                valor = 120.46
-            elif idade <= 33:
-                valor = 138.53
-            elif idade <= 38:
-                valor = 159.31
-            elif idade <= 43:
-                valor = 189.58
-            elif idade <= 48:
-                valor = 236.98
-            elif idade <= 53:
-                valor = 296.23
-            elif idade <= 58:
-                valor = 503.59
-            else:
-                valor = 564.02
-        elif plano == 'enfermaria (pessoa jurídica) - Coparticipação parcial':
-            if idade <= 18:
-                valor = 175.39
-            elif idade <= 23:
-                valor = 196.44
-            elif idade <= 28:
-                valor = 220.01
-            elif idade <= 33:
-                valor = 253.01
-            elif idade <= 38:
-                valor = 290.96
-            elif idade <= 43:
-                valor = 346.24
-            elif idade <= 48:
-                valor = 432.80
-            elif idade <= 53:
-                valor = 541.00
-            elif idade <= 58:
-                valor = 919.70
-            else:
-                valor = 1030.06
-        elif plano == 'enfermaria (pessoa jurídica) - Coparticipação total':
-            if idade <= 18:
-                valor = 137.08
-            elif idade <= 23:
-                valor = 153.53
-            elif idade <= 28:
-                valor = 171.95
-            elif idade <= 33:
-                valor = 197.74
-            elif idade <= 38:
-                valor = 227.40
-            elif idade <= 43:
-                valor = 270.61
-            elif idade <= 48:
-                valor = 338.26
-            elif idade <= 53:
-                valor = 422.83
-            elif idade <= 58:
-                valor = 718.81
-            else:
-                valor = 805.07
-        elif plano == 'apartamento (pessoa jurídica) - Coparticipação parcial':
-            if idade <= 18:
-                valor = 262.33
-            elif idade <= 23:
-                valor = 293.81
-            elif idade <= 28:
-                valor = 329.07
-            elif idade <= 33:
-                valor = 378.43
-            elif idade <= 38:
-                valor = 435.19
-            elif idade <= 43:
-                valor = 517.88
-            elif idade <= 48:
-                valor = 647.35
-            elif idade <= 53:
-                valor = 809.19
-            elif idade <= 58:
-                valor = 1375.62
-            else:
-                valor = 1540.69
-        elif plano == 'apartamento (pessoa jurídica) - Coparticipação total':
-            if idade <= 18:
-                valor = 204.86
-            elif idade <= 23:
-                valor = 229.44
-            elif idade <= 28:
-                valor = 256.97
-            elif idade <= 33:
-                valor = 295.52
-            elif idade <= 38:
-                valor = 339.85
-            elif idade <= 43:
-                valor = 404.42
-            elif idade <= 48:
-                valor = 505.53
-            elif idade <= 53:
-                valor = 631.91
-            elif idade <= 58:
-                valor = 1074.25
-            else:
-                valor = 1203.16
         else:
             return 'Plano inválido'
 
