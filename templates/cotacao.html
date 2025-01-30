@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cotações Hapvida</title>
+    <title>Cotação Plamed</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Cotação Hapvida</h2>
+      <h2>Cotação Plamed</h2>
       <form action="/cotacao" method="post">
         <div class="form-group">
           <label for="idade">Idade:</label>
@@ -24,20 +24,14 @@
           <label for="plano">Plano:</label>
           <select id="plano" name="plano">
             <option value="Selecione o plano">Selecione o plano</option>
-            <option value="ambulatorial (pessoa física) - Coparticipação parcial">21028 - Ambulatorial (pessoa física) - Coparticipação parcial</option>
-            <option value="ambulatorial (pessoa física) - Coparticipação total">11330 - Ambulatorial (pessoa física) - Coparticipação total</option>
-            <option value="enfermaria (pessoa física) - Coparticipação parcial">21042 - Enfermaria (pessoa física) - Coparticipação parcial</option>
-            <option value="enfermaria (pessoa física) - Coparticipação total">11812 - Enfermaria (pessoa física) - Coparticipação total</option>
-            <option value="apartamento (pessoa física) - Coparticipação parcial">21047 - Apartamento (pessoa física) - Coparticipação parcial</option>
-            <option value="apartamento (pessoa física) - Coparticipação total">11813 - Apartamento (pessoa física) - Coparticipação total</option>
-            <option value="Mix enfermaria (pessoa física) - Coparticipação parcial">21427 - Mix Enfermaria (pessoa física) - Coparticipação parcial</option>
-            <option value="Mix apartamento (pessoa física) - Coparticipação parcial">21428 - Mix Apartamento (pessoa física) - Coparticipação parcial</option>
-            <option value="ambulatorial (pessoa jurídica) - Coparticipação parcial">21217 - Ambulatorial (pessoa jurídica) - Coparticipação parcial</option>
-            <option value="ambulatorial (pessoa jurídica) - Coparticipação total">11789 - Ambulatorial (pessoa jurídica) - Coparticipação total</option>
-            <option value="enfermaria (pessoa jurídica) - Coparticipação parcial">21218 - Enfermaria (pessoa jurídica) - Coparticipação parcial</option>
-            <option value="enfermaria (pessoa jurídica) - Coparticipação total">11791 - Enfermaria (pessoa jurídica) - Coparticipação total</option>
-            <option value="apartamento (pessoa jurídica) - Coparticipação parcial">21219 - Apartamento (pessoa jurídica) - Coparticipação parcial</option>
-            <option value="apartamento (pessoa jurídica) - Coparticipação total">11790 - Apartamento (pessoa jurídica) - Coparticipação total</option>
+            <option value="PLAMED EXCLUSIVE Enf CCO">PLAMED EXCLUSIVE Enf CCO</option>
+            <option value="MAIS VOCÊ">MAIS VOCÊ</option>
+            <option value="PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)">PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)</option>
+            <option value="PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)">PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)</option>
+            <option value="EMPRESARIAL PREFERENCIAL I CECM CP">EMPRESARIAL PREFERENCIAL I CECM CP</option>
+            <option value="EMPRESARIAL BASICO SERGIPE II CP (ENFERMARIA)">EMPRESARIAL BASICO SERGIPE II CP (ENFERMARIA)</option>
+            <option value="EMPRESARIAL ESPECIAL SERGIPE II (APARTAMENTO)">EMPRESARIAL ESPECIAL SERGIPE II (APARTAMENTO)</option>
+            <option value="EMPRESARIAL GOLD I (ENFERMARIA)">EMPRESARIAL GOLD I (ENFERMARIA)</option>
           </select>
         </div>
         <div class="form-group">
