@@ -40,10 +40,22 @@
             <h3>Rede de Atendimento:</h3>
             {% if plano_selecionado == 'PLAMED EXCLUSIVE Enf CCO' %}
             <p>Na rede própria da Clínica São Camilo, urgência e/ou emergência na São Camilo e Renascença, e para parto Clínica Santa Helena.</p>
+            
             {% elif plano_selecionado == 'MAIS VOCÊ' %}
             <p>Em uma vasta rede de clínicas e sua livre escolha, urgência e/ou emergência na Clínica São Camilo, Renascença, Pimpolho e para parto Clínica Santa Helena.</p>
+            
             {% elif plano_selecionado == 'PLAMED GOLD I CO-PARTICIPAÇÃO (ENFERMARIA)' or plano_selecionado == 'PLAMED GOLD II CO-PARTICIPAÇÃO (APARTAMENTO)' %}
             <p>Em uma vasta rede de clínicas e sua livre escolha, urgência e/ou emergência na Clínica São Camilo, Renascença, Pimpolho e Hospital São Lucas, Hospital Primavera, Hospital do Coração e para parto Clínica Santa Helena.</p>
+            
+            {% elif plano_selecionado == 'EMPRESARIAL PREFERENCIAL I CECM CP' %}
+            <p>A Clínica São Camilo para consultas e exames, para urgência/emergência no Renascença e São Camilo, e para parto maternidade Santa Helena.</p>
+            
+            {% elif plano_selecionado == 'EMPRESARIAL BASICO SERGIPE II CP (ENFERMARIA)' or plano_selecionado == 'EMPRESARIAL ESPECIAL SERGIPE II (APARTAMENTO)' %}
+            <p>Rede aberta através do guia médico para consultas e exames, para urgência/emergência no Renascença, para crianças Pimpolho, e para parto maternidade Santa Helena; não possuem atendimento no Hospital São Lucas.</p>
+            
+            {% elif plano_selecionado == 'EMPRESARIAL GOLD I (ENFERMARIA)' %}
+            <p>Nos hospitais: Primavera, São Lucas e Hospital do Coração.</p>
+            
             {% else %}
             <p>Rede de atendimento indisponível para o plano selecionado.</p>
             {% endif %}
